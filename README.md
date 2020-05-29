@@ -2,9 +2,15 @@
 
 
 ## セットアップ
-
+```
+$ npm i
+$ npm run develop
+```
+=> HPが [localhost:8000](localhost:8000)で開きます
+=> GraphQL UIが [http://localhost:8000/___graphql](http://localhost:8000/___graphql)で開きます。
 
 ※GoogleDriveを使う場合
+
 1. 下記urlから、GoogleDriveのAPIトークンを取得します
 https://developers.google.com/drive/api/v3/quickstart/nodejs
 種類は「Desktop App」でOK。
@@ -54,7 +60,13 @@ https://developers.google.com/drive/api/v3/quickstart/nodejs
 
 ### ローカルサーバの起動
 
- `$ npm run develop`
+```
+
+$ npm run develop
+
+```
+ 
+ 
 
 [ローカルサーバー（localhost:8000）](localhost:8000)が立ち上がります。
 `/src`ディレクトリ内が監視対象になっており、ファイルを編集した場合自動的に反映されます。
