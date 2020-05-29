@@ -24,6 +24,8 @@ https://developers.google.com/drive/api/v3/quickstart/nodejs
 
 4. コードをコピーして、ターミナルに貼り付けて、エンター。
 
+5.`npm run contents:update`を実行
+
 
 ## ディレクトリ構造
 ```
