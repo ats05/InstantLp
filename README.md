@@ -7,6 +7,7 @@ $ npm i
 $ npm run develop
 ```
 => HPが [localhost:8000](localhost:8000)で開きます
+
 => GraphQL UIが [http://localhost:8000/___graphql](http://localhost:8000/___graphql)で開きます。
 
 ※GoogleDriveを使う場合
