@@ -52,6 +52,9 @@ async function getFiles(auth) {
     }
 
     console.log(fileList);
+    fs.mkdir(OUTPUT_PATH, { recursive: true }, (err) => {
+        if (err) throw err;
+    });
     fileList.forEach(file => {
 
         return drive.files
