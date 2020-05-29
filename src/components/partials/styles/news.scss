@@ -1,0 +1,43 @@
+.news__heading {
+  text-align: center;
+}
+
+.news__link {
+}
+
+.news__table {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.news__area {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.news__row {
+  display: flex;
+  font-weight: 100;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+
+.news__date {
+  padding: 0 10px;
+  min-width: 80px;
+}
+
+.news__description {
+
+}
+
+.news__body {
+  padding-bottom: 40px;
+  margin: 0 60px 40px;
+  border-bottom: solid 1px rgb(228, 228, 228);
+  line-height: 1.8rem;
+}
+
+.news__body:last-child {
+  border-bottom: none;
+}

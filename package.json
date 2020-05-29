@@ -1,0 +1,62 @@
+{
+    "name": "instant_lp",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+        "cpx": "^1.5.0",
+        "gatsby": "^2.21.1",
+        "gatsby-plugin-sass": "^2.3.0",
+        "gatsby-source-filesystem": "^2.3.0",
+        "gatsby-transformer-csv": "^2.3.0",
+        "gatsby-transformer-docx": "^1.0.8",
+        "gatsby-transformer-ms-word": "^1.1.0",
+        "gatsby-transformer-remark": "^2.8.3",
+        "googleapis": "^39.2.0",
+        "moment": "^2.24.0",
+        "node-sass": "^4.14.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-helmet": "^6.0.0",
+        "rimraf": "^3.0.2"
+    },
+    "devDependencies": {
+        "gatsby-disable-404": "^0.2.1",
+        "npm-run-all": "^4.1.5"
+    },
+    "scripts": {
+        "//": "▼▼▼コンテンツ更新周り▼▼▼",
+        "contents:update": "run-s contents:delete:backup contents:backup:* contents:delete contents:get:*",
+        "contents:backup": "npm-run-all contents:backup:*",
+        "contents:backup:docx": "cpx contents/docx/*.{docx} contents-backup/docx",
+        "contents:backup:csv": "cpx contents/csv/*.{csv} contents-backup/csv",
+        "contents:restore": "npm-run-all contents:restore:*",
+        "contents:restore:docx": "cpx contents-backup/docx/* contents/docx/",
+        "contents:restore:csv": "cpx contents-backup/csv/* contents/csv/",
+        "contents:delete": "rimraf contents/**/*.{docx,csv}",
+        "contents:delete:backup": "rimraf contents-backup/{docx/*, csv/*}",
+        "contents:get": "npm-run-all contents:get:*",
+        "contents:get:docx": "node scripts/getContents/getDocx.js",
+        "contents:get:csv": "node scripts/getContents/getCsv.js",
+
+        "///": "▼▼▼コンテンツ更新周り▼▼▼",
+        "deploy:prod": "run-s clean getContents build",
+        "build": "gatsby build",
+        "develop": "gatsby develop",
+        "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+        "start": "npm run develop",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+        "release:serve": "gatsby develop"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ats05/instant_lp.git"
+    },
+    "author": "Atsushi Onozawa",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ats05/instant_lp/issues"
+    },
+    "homepage": "https://github.com/ats05/instant_lp#readme"
+}

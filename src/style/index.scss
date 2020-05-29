@@ -1,0 +1,182 @@
+/*TODO 画像サイズ調整*/
+
+@import "_common.scss";
+
+.service__greeting {
+    margin: 0 0 20px;
+}
+
+span.strong {
+    font-weight: 600;
+    color: #ff730a;
+}
+
+.service__list {
+    padding-left: 20px;
+}
+
+.service__listItem {
+    margin: 0 0 0.8rem;
+}
+
+.service__listItem:last-child {
+    margin: 0;
+}
+
+.service__listItem__caption {
+    font-size: 0.9rem;
+}
+
+.about__table {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about__area {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about__row {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 100;
+    margin: 0 0 1rem;
+}
+
+.about__term {
+    flex-basis: 20%;
+    padding: 0 0 0 5%;
+}
+
+.about__description {
+
+}
+
+.philosophy__heading {
+
+}
+
+.philosophy__body {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+.philosophy__strong {
+    font-weight: 600;
+}
+
+.eyeCatch__area {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.eyeCatch__image {
+    max-width: 90%;
+    margin: 200px auto 50px;
+    display: block;
+}
+
+.members__horizontal {
+    display: flex;
+    margin: 0 0 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.members__horizontalItem {
+    width: 250px;
+    margin: auto 12.7px;
+}
+
+.members__people {
+    padding: 0 0 40px;
+}
+
+.members__people:last-child {
+    padding: 0;
+}
+
+.members__photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.members__name {
+    font-weight: 600;
+    margin: 0 10px 5px;
+    text-align: center;
+}
+
+.members__caption {
+    font-weight: 100;
+    margin: 0 20px 18px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.members__body {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+}
+
+.members__introduce {
+    padding-left: 20px;
+}
+
+.members__link {
+    text-align: center;
+}
+
+
+.origin__area {
+    margin-top: 80px;
+}
+
+
+
+/* PC用 */
+@media screen and (min-width: 480px) {
+
+    .eyeCatch__image {
+        max-width: 40%;
+        margin: 200px 140px 50px auto;
+        display: block;
+    }
+
+    .about__term {
+        flex-basis: 20%;
+        padding: 0 0 0 150px;
+    }
+
+    .about__description {
+        padding: 0 0 0 50px;
+    }
+
+    .philosophy__body {
+        font-size: 1.27rem;
+        line-height: 2.5rem;
+    }
+
+    .service__greeting {
+        margin: 0 0 20px;
+    }
+
+    .members__name {
+        text-align: left;
+    }
+
+    .members__caption {
+        text-align: left;
+    }
+
+    .members__horizontal {
+        margin: 0 20px 20px;
+        justify-content: center;
+    }
+}
+@media all and (-ms-high-contrast: none) { /* IE10,11用 */
+}

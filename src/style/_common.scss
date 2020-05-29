@@ -1,0 +1,82 @@
+html {
+    width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #555555;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ff730a;
+}
+
+a:hover {
+    color: #ffd034;
+}
+
+a:visited {
+    color: #a44c07;
+}
+
+.content {
+    margin: 100px auto 0;
+}
+
+.body__main {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#B8ffffff,EndColorStr=#B8ffffff);
+    margin: 200px auto 0;
+    padding: 30px 0 0;
+}
+
+
+.body__contents {
+    padding: 0 50px 100px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.origin__heading {
+    font-weight: 300;
+    text-align: center;
+}
+
+.origin__body {
+    font-size: 0.8rem;
+}
+
+
+.module__heading {
+    font-size: 1.5rem;
+    color: rgb(99, 99, 99);
+    text-align: center;
+    margin: 0 0 30px;
+    font-weight: 600;
+}
+
+
+/* PC用 */
+@media screen and (min-width: 480px) {
+
+    .content {
+        margin: 100px auto 70px;
+    }
+
+    .body__contents {
+        padding: 0 150px 70px;
+    }
+
+    .module__heading {
+        font-size: 27px;
+    }
+
+}
+@media all and (-ms-high-contrast: none) { /* IE10,11用 */
+    .module__heading {
+        background: none;
+    }
+}

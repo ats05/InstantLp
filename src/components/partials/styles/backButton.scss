@@ -1,0 +1,19 @@
+
+.backButton {
+    &__area {
+        margin-top: 70px;
+        text-align: center;
+    }
+    // &__icon {
+    //     vertical-align: middle;
+    //     width: 40px;
+    // }
+    &__text{
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(87, 87, 87);
+        &:visited {
+            color: rgb(87, 87, 87);
+        }
+    }
+}
