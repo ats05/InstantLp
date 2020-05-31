@@ -7,7 +7,6 @@
 module.exports = {
     /* Your site config here */
     plugins: [
-        "gatsby-disable-404",
         `gatsby-plugin-sass`,
 
         // CSVから情報を取得したい場合

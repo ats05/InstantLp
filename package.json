@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "dependencies": {
+        "axios": "^0.19.2",
         "cpx": "^1.5.0",
         "gatsby": "^2.21.1",
         "gatsby-plugin-sass": "^2.3.0",
@@ -20,12 +21,11 @@
         "rimraf": "^3.0.2"
     },
     "devDependencies": {
-        "gatsby-disable-404": "^0.2.1",
         "npm-run-all": "^4.1.5"
     },
     "scripts": {
         "//": "▼▼▼コンテンツ更新周り▼▼▼",
-        "contents:update": "run-s contents:delete:backup contents:backup contents:delete contents:get:*",
+        "contents:update": "run-s clean contents:delete:backup contents:backup contents:delete contents:get:*",
         "contents:backup": "npx cpx \"./contents/**/*.*\" ./contents-backup -v -C",
         "contents:restore": "npx cpx \"./contents-backup/**/*.*\" ./contents -v -C",
         "contents:delete": "rimraf contents/**/*.{docx,csv}",
@@ -33,7 +33,7 @@
         "contents:get": "npm-run-all contents:get:*",
         "contents:get:docx": "node scripts/getContents/getDocx.js",
         "contents:get:csv": "node scripts/getContents/getCsv.js",
-        "///": "▼▼▼コンテンツ更新周り▼▼▼",
+        "///": "▼▼▼デプロイ周り▼▼▼",
         "deploy:prod": "run-s clean getContents build",
         "build": "gatsby build",
         "develop": "gatsby develop",
@@ -42,7 +42,8 @@
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-        "release:serve": "gatsby develop"
+        "release:serve": "gatsby develop",
+        "deploy": "run-s contents:update build"
     },
     "repository": {
         "type": "git",

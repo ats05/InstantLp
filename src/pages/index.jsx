@@ -6,6 +6,7 @@ import News from "../components/partials/news";
 import BackgroundImage from "../components/partials/fixedBackgroundImage";
 import DataTable from "../components/partials/dataTable";
 import Contact from "../components/partials/contact";
+import AjaxSample from "../components/partials/ajaxSample"
 
 
 
@@ -48,11 +49,20 @@ export default () => {
                         </div>
 
                         <div className="body__contents service__area">
-                            <h2 className="module__heading service__heading">箇条書き</h2>
+                            <AjaxSample/>
+                        </div>
 
+                        <div className="body__contents">
+                            <h2 className="module__heading">404ページ</h2>
+                            <div className="service__body">
+                                <a href={"/404"}>404ページ</a>はこちら。
+                            </div>
+                        </div>
+
+                        <div className="body__contents service__area">
+                            <h2 className="module__heading service__heading">箇条書き</h2>
                             <div className="service__body">
                                 ここはコンポーネント化していません。ごくごく普通のhtmlです。
-
                                 <ol className="service__list">
                                     <li className="service__listItem">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.

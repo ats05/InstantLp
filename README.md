@@ -32,7 +32,7 @@ https://developers.google.com/drive/api/v3/quickstart/nodejs
 .
 ├── contents    コンテンツ内容の置き場
 │   ├── csv
-│   ├── docx
+│   └── docx
 ├── contents-backup     コンテンツのバックアップ
 ├── credentials         GoogleDriveなどの認証ファイル等の置き場
 ├── gatsby-config.js
@@ -47,14 +47,15 @@ https://developers.google.com/drive/api/v3/quickstart/nodejs
 │   │   └── partials
 │   │   │   └── styles  Reactコンポーネントのcss
 │   ├── pages
-│   │   └── index.jsx   トップページのjsx
+│   │   ├── index.jsx   トップページのjsx
+│   │   └── 404.jsx     404ページのjsx
 │   ├── style           個別画面css置き場
 │   │   ├── _common.scss
 │   │   ├── index.scss
 │   │   └── release.scss
 │   └── templates       個別ページのテンプレート置き場
 │       └── ReleaseTemplate.jsx
-└── static              画像などの静的ファイル置き場
+└── static              画像などの静的ファイル置き場。ビルドするとpublic配下にコピーされます
     └── images
 ```
 
@@ -64,15 +65,17 @@ https://developers.google.com/drive/api/v3/quickstart/nodejs
 ### ローカルサーバの起動
 
 ```
-
 $ npm run develop
-
-```
- 
- 
+``` 
 
 [ローカルサーバー（localhost:8000）](localhost:8000)が立ち上がります。
 `/src`ディレクトリ内が監視対象になっており、ファイルを編集した場合自動的に反映されます。
+
+GoogleDriveから最新のコンテンツを取得する場合は、以下のコマンドを実行します。
+```
+$ npm run contents:update
+```
+
 
 
 
@@ -127,5 +130,5 @@ server {
 
 
 ## 現状の課題
--[ ] 404ページを作っていないので、エラーが出る
+-[x] 404ページを作っていないので、エラーが出る
 -[ ] GoogleDrive以外の方法があった方がいい
