@@ -44,7 +44,8 @@
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
         "release:serve": "gatsby develop",
         "deploy": "run-s contents:update build",
-        "deploy:gh-pages": "run-s contents:update build deploy:gh-pages:copy",
+        "deploy:gh-pages": "run-s contents:update deploy:gh-pages:build deploy:gh-pages:copy",
+        "deploy:gh-pages:build": "gatsby build --prefix-paths",
         "deploy:gh-pages:copy": "cpx \"./public/**/*.*\" ./docs -v -C"
     },
     "repository": {

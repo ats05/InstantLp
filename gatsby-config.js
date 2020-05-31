@@ -6,7 +6,9 @@
 
 module.exports = {
     /* Your site config here */
+    pathPrefix: `/instant_lp`,
     plugins: [
+
         `gatsby-plugin-sass`,
 
         // CSVから情報を取得したい場合
