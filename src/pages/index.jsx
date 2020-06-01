@@ -114,7 +114,7 @@ export default () => {
 
                         </div>
 
-                        <h2 id="contact" className="module__heading contact__heading">お問い合わせ</h2>
+                        <h2 id="contact" className="module__heading contact__heading">Contactコンポーネント</h2>
                         <div className="body__contents">
                             <Contact/>
                         </div>
