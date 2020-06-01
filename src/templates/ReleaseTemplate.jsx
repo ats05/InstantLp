@@ -17,7 +17,6 @@ const VAR_DATE = /@variable:date@(.*?)@end@/;
 
 export default class Template extends React.Component {
     constructor(props) {
-        console.log(props);
         super(props);
         this.state = {
             content: props.data.docx.content
