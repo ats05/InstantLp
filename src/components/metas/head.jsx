@@ -24,17 +24,6 @@ export default function Head(props) {
             <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,600|Noto+Serif+JP:300&display=swap"
                   rel="stylesheet"/>
             <link rel="shortcut icon" href="/images/favicon.ico"/>
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70279810-3"></script>
-            <script
-                dangerouslySetInnerHTML={{
-                    __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'UA-70279810-3');
-                `
-                }}
-            />
         </Helmet>
     );
 }
