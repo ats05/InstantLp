@@ -48,13 +48,15 @@ export default () => {
                                 <span className="strong">React.Component</span>でパーツを設計し、追加していくことが可能です。
                                 <br/>
                                 また、静的なHTMLだけでなくReactが動作する状態のJSを書き出してくれるので、Ajaxなどの処理もComponent内で実装することができます。
-                                <br/>
+                            </div>
+                            <div className="module__greeting">
+                                Gatsby.JSはmarkdownやWordpress REST APIなどから記事を生成するプラグインが充実しており、
                                 このデモでは<span className="strong">GoogleDrive</span>にアップロードした
                                 <ul className="module__list">
                                     <li>.docxファイルから<a href={"/release/demo"}>記事</a></li>
                                     <li>.csvファイルから<a href={"#news"}>ニュース</a></li>
                                 </ul>
-                                を生成する機能が実装されています。
+                                を生成する機能を実装しています。
                             </div>
                         </div>
 
