@@ -37,47 +37,57 @@ export default () => {
                 </section>
                 <section>
                     <main className="body__main">
-                        <div className="body__contents news__area">
+                        <div className="body__contents news__area" id="news">
                             <News />
                         </div>
                         <div className="body__contents">
-                            <h2 className="module__heading news__heading">見出し文章</h2>
-                            <div className="service__greeting">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum fuga, harum id maiores repellat saepe sequi voluptatibus?<br/>
-                                Aliquid architecto facilis maiores molestias officiis quae quasi recusandae sequi veniam voluptatem!
+                            <h2 className="module__heading news__heading">このサイトについて</h2>
+                            <div className="module__greeting">
+                                Reactベースのサイトジェネレータである<a href={"https://www.gatsbyjs.org/"}>Gatsby.JS</a>を使ったサイトのテンプレートです。
+                                <br/>
+                                <span className="strong">React.Component</span>でパーツを設計し、追加していくことが可能です。
+                                <br/>
+                                また、静的なHTMLだけでなくReactが動作する状態のJSを書き出してくれるので、Ajaxなどの処理もComponent内で実装することができます。
+                                <br/>
+                                このデモでは<span className="strong">GoogleDrive</span>にアップロードした
+                                <ul className="module__list">
+                                    <li>.docxファイルから<a href={"/release/demo"}>記事</a></li>
+                                    <li>.csvファイルから<a href={"#news"}>ニュース</a></li>
+                                </ul>
+                                を生成する機能が実装されています。
                             </div>
                         </div>
 
-                        <div className="body__contents service__area">
+                        <div className="body__contents module__area">
                             <AjaxSample/>
                         </div>
 
                         <div className="body__contents">
                             <h2 className="module__heading">404ページ</h2>
-                            <div className="service__body">
+                            <div className="module__body">
                                 <a href={"/404"}>404ページ</a>はこちら。
                             </div>
                         </div>
 
-                        <div className="body__contents service__area">
-                            <h2 className="module__heading service__heading">箇条書き</h2>
-                            <div className="service__body">
+                        <div className="body__contents module__area">
+                            <h2 className="module__heading module__heading">箇条書き</h2>
+                            <div className="module__body">
                                 ここはコンポーネント化していません。ごくごく普通のhtmlです。
-                                <ol className="service__list">
-                                    <li className="service__listItem">
+                                <ol className="module__list">
+                                    <li className="module__listItem">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     </li>
-                                    <li className="service__listItem">
+                                    <li className="module__listItem">
                                         Aliquid, enim exercitationem harum id illo.
                                     </li>
-                                    <li className="service__listItem">
+                                    <li className="module__listItem">
                                         incidunt iure iusto magnam maxime mollitia possimus quisquam.
                                     </li>
                                 </ol>
                             </div>
                         </div>
 
-                        <h2 className="module__heading about__heading">テーブル表示</h2>
+                        <h2 className="module__heading about__heading">DataTableコンポーネント</h2>
                         <div className="body__contents">
                             <DataTable data={aboutData}/>
                         </div>

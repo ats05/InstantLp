@@ -34,15 +34,15 @@ export default class AjaxSample extends React.Component {
 
     render() {
         const { error, isLoaded, items } = this.state;
-        const heading = "React.Componentとajaxを使ったサンプル";
+        const heading = "AjaxSampleコンポーネント";
 
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
             return (
                 <>
-                    <h2 className="module__heading service__heading">{heading}</h2>
-                    <div className="service__body">
+                    <h2 className="module__heading module__heading">{heading}</h2>
+                    <div className="module__body">
                         Loading...
                     </div>
                 </>
@@ -60,7 +60,7 @@ export default class AjaxSample extends React.Component {
                     slide.items.forEach(item => {
                         console.log(item);
                         slideItems.push(
-                            <li className="service__listItem" >
+                            <li className="module__listItem" >
                                 {item}
                             </li>
                         );
@@ -68,7 +68,7 @@ export default class AjaxSample extends React.Component {
                 }
 
                 slidesList.push(
-                    <li className="service__listItem">
+                    <li className="module__listItem">
                         「{slide.title}」
                         <ol>
                             {slideItems}
@@ -79,14 +79,12 @@ export default class AjaxSample extends React.Component {
 
             return (
                 <>
-                    <h2 className="module__heading service__heading">{heading}</h2>
-                    <div className="service__body">
-                        完全に静的なHTMLのみを書き出すわけではないので、通常のReact構文を用いてコンポーネントを作成することが可能です。
-                        <br/>
-                        このコンポーネントでは<a href={"http://httpbin.org/"}>httpbin.org</a>からAjaxでJSONデータを取得し、クライアントサイドでレンダリングしています。
+                    <h2 className="module__heading module__heading">{heading}</h2>
+                    <div className="module__body">
+                        このコンポーネントでは<a href={"http://httpbin.org/"}>httpbin.org</a>から<span className="strong">Ajax</span>でJSONデータを取得し、クライアントサイドでレンダリングしています。
                         <br/>
                         ※jsonの中身に「&lt;em&gt;」タグが入っているので、そのままエスケープして表示しています。
-                        <ul className="service__list">
+                        <ul className="module__list">
                             {slidesList}
                         </ul>
                     </div>

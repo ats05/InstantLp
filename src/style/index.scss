@@ -2,7 +2,7 @@
 
 @import "_common.scss";
 
-.service__greeting {
+.module__greeting {
     margin: 0 0 20px;
 }
 
@@ -11,19 +11,19 @@ span.strong {
     color: #ff730a;
 }
 
-.service__list {
+.module__list {
     padding-left: 20px;
 }
 
-.service__listItem {
+.module__listItem {
     margin: 0 0 0.8rem;
 }
 
-.service__listItem:last-child {
+.module__listItem:last-child {
     margin: 0;
 }
 
-.service__listItem__caption {
+.module__listItem__caption {
     font-size: 0.9rem;
 }
 
@@ -161,7 +161,7 @@ span.strong {
         line-height: 2.5rem;
     }
 
-    .service__greeting {
+    .module__greeting {
         margin: 0 0 20px;
     }
 

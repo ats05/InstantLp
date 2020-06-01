@@ -47,7 +47,7 @@ https://developers.google.com/drive/api/v3/quickstart/nodejs
 │   │   └── partials
 │   │   │   └── styles  Reactコンポーネントのcss
 │   ├── pages
-│   │   ├── index.jsx   トップページのjsx
+│   │   ├── index.jsx   トップページのjsx ページを追加したい場合は、ここにjsxを配置します。
 │   │   └── 404.jsx     404ページのjsx
 │   ├── style           個別画面css置き場
 │   │   ├── _common.scss

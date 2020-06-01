@@ -14,7 +14,7 @@
         "gatsby-transformer-remark": "^2.8.3",
         "googleapis": "^39.2.0",
         "moment": "^2.24.0",
-        "node-sass": "^4.14.0",
+        "node-sass": "^4.14.1",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-helmet": "^6.0.0",

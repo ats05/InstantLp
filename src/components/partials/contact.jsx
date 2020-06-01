@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <>
             <div className="contact__body contact__message">
-                一番単純なコンポーネントな例です。
+                一番単純なコンポーネントの例です。
             </div>
             <div className="contact__body contact__message">
                 これを各ページに入れるという場合には、コンポーネントにしたほうが良いかもしれませんが、不必要に増やす必要もありません。
