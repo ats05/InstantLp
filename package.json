@@ -11,7 +11,7 @@
         "gatsby-transformer-csv": "^2.3.0",
         "gatsby-transformer-docx": "^1.0.8",
         "gatsby-transformer-ms-word": "^1.1.0",
-        "gatsby-transformer-remark": "^2.8.3",
+        "gatsby-transformer-remark": "^5.25.1",
         "googleapis": "^39.2.0",
         "moment": "^2.24.0",
         "node-sass": "^4.14.1",
